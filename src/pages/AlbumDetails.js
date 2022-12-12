@@ -10,13 +10,9 @@ const AlbumDetails = () => {
 
   return (
     <section>
-      <h2>Album {id}</h2>
-
       {loading && <LoadingIcon />}
-
-      {album.info && <AlbumInfo info={album.info} />}
-
-      {album.song?.lenght > 0 && <AlbumSongs songs={album.songs} />}
+      {album.info && <AlbumInfo info={album.info} />};
+      {album.songs?.length > 0 && <AlbumSongs songs={album.songs} />}
     </section>
   );
 };

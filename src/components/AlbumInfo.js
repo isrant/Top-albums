@@ -1,6 +1,7 @@
 const AlbumInfo = ({ info }) => {
   const { collectionName, artistName, releaseDate, artworkUrl100 } = info;
-  console.log(collectionName, artistName, releaseDate, artworkUrl100);
+  //console.log(info);
+  //console.log(collectionName, artistName, releaseDate, artworkUrl100);
 
   return (
     <section className="album-info">
