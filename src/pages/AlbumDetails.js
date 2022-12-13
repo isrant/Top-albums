@@ -9,7 +9,7 @@ const AlbumDetails = () => {
   const { album, loading } = useAlbumWithSongs(id);
 
   return (
-    <section>
+    <section className="album-details-page">
       {loading && <LoadingIcon />}
       {album.info && <AlbumInfo info={album.info} />};
       {album.songs?.length > 0 && <AlbumSongs songs={album.songs} />}

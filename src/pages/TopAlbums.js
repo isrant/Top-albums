@@ -13,7 +13,7 @@ const TopAlbums = () => {
       {loading && <LoadingIcon />}
 
       {albums.length > 0 && (
-        <ul>
+        <ul className="album-list">
           {albums.map((album) => (
             <li key={album.id}>
               <Link to={`/albums/${album.id}`}>
